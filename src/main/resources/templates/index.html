@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <table>
+        <tr>
+            <th>学生id</th>
+            <th>学生name</th>
+            <th>学生age</th>
+        </tr>
+        <tr th:each="student:${listStudent}">
+            <td th:text="${student.id}"></td>
+            <td th:text="${student.name}"></tdth:text></td>
+            <td th:text="${student.age}"></td>
+        </tr>
+    </table>
+    <a th:href="@{https://www.baidu.com}">跳转</a>
+    <a th:href="@{www.baidu.com}">跳转</a>
+    <p th:text="${#request.getAttribute('requestAttr')}"></p>
+    <p th:text="${#session.getAttribute('sessionAttr')}"></p>
+    <p th:text="${#locale.CHINA}"></p>
+</body>
+</html>
