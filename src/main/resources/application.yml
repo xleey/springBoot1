@@ -9,5 +9,5 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
     username: xiaoliyang
-    password: 905959759
+    password: 905959759123
     driver-class-name: com.mysql.cj.jdbc.Driver
